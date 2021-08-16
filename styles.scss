@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
 
 /* Global */
-* {
-  box-sizing: border-box;
-}
 @import "./constants";
 
 body {
-  color: #090b08;
+  color:#090b08;
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -83,6 +80,7 @@ input {
 
 /* Header */
 header {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -94,14 +92,12 @@ header {
   -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  .brand-logo img {
+    width: auto;
+    padding-top: 20px;
+    height: 7.5em;
+  }
 }
-
-.brand-logo img {
-  width: auto;
-  padding-top: 20px;
-  height: 7.5em;
-}
-
 .title {
   display: flex;
   align-items: center;
@@ -126,98 +122,89 @@ header {
 
 /* Hero Section */
 .hero {
+  @include standard-text ();
   padding: $padding-standard;
   display: flex;
   height: 100vh;
   align-items: center;
   background: $color-soft;
-}
-.hero-img img {
-  display: block;
-  height: auto;
-  width: 15.5em;
-}
-.hero-text {
-  max-width: 700px;
-  text-align: center;
-  padding: $padding-standard;
-}
+  &__img img {
+    display: block;
+    height: auto;
+    width: 15.5em;
+  }
+  &__text {
+  @include standard-text ();
+  }
 
-/* Featured Section */
-.featured {
-  padding: $padding-standard;
-}
-.featured .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
+  /* Featured Section */
+  .featured {
+    @include standard-text ();
+    padding: $padding-standard;
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__image img {
+      width: 300px;
+    }
+  }
+    &__text {
+      @include standard-text ();
+    &__p {
+      @include standard-text ();
+      text-align: justify;
+      padding: $padding-standard;
+      line-height: 1.4em;
+      background-color: $color-light;
+    }
+  }
 
-#featured .image img {
-  width: 300px;
-}
+  /* About Section */
+  .about {
+    @include standard-text ();
+    background-color: $color-soft;
+    padding: $padding-standard;
+      &__p {
+        text-align: justify;
+        padding-bottom: 1em;
+        line-height: 1.4em;
+      }
+      &__wrapper {
+        display: flex;
+      }
+      &__video-wrapper {
+        position: relative;
+        padding-bottom: 33.25%;
+        overflow: hidden;
+        align-self: center;
+        flex: 2 0 55%;
+        margin: 1.4em 0;
+        &__iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 
-.text-featured {
-  max-width: 700px;
-  text-align: center;
-  padding: $padding-standard;
-}
-.text-featured p {
-  text-align: justify;
-  padding: $padding-standard;
-  line-height: 1.4em;
-  background-color: $color-light;
-}
+  /* Contact Section */
+  .contact {
+    padding: $padding-standard;
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__form-wrapper,
+    &__wrapper {
+      padding: $padding-standard;
+    }
 
-/* About Section */
+    .copy-wrapper {
+      padding-left: 20px;
+    }
+  }
 
-.text-about {
-  max-width: 700px;
-  text-align: center;
-  padding: 20px;
-}
-.text-about p {
-  text-align: justify;
-  padding-bottom: 1em;
-  line-height: 1.4em;
-}
-.about {
-  background-color: $color-soft;
-  padding: $padding-standard;
-}
-.about .wrapper {
-  display: flex;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 33.25%;
-  overflow: hidden;
-  align-self: center;
-  flex: 2 0 55%;
-  margin: 1.4em 0;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Contact Section */
-.contact {
-  padding: $padding-standard;
-}
-.wrapper .contact {
-  display: flex;
-  flex-wrap: wrap;
-}
-.form-wrapper,
-.contact-wrapper {
-  padding: $padding-standard;
-}
-
-.copy-wrapper {
-  padding-left: 20px;
-}

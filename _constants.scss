@@ -1,6 +1,21 @@
-$padding-standard: 20px;
+@mixin standard-text {
+    box-sizing: border-box;
+    color:red;
+    max-width: 80ch;
+    padding-left:10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1em;
+    
+  }
+$padding-standard: 60px;
 $color-bright: #97d279;
 $color-light: #ecffe9;
 $color-soft: #c0eea9;
-$color-black: #090b08;
+$color-black: red;
 $color-white: #fff;
+
+/*
+#090b08
+*/

@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
 /* Global */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+/*
+#090b08
+*/
 body {
   color: #090b08;
   margin: 0;
@@ -103,6 +101,8 @@ input {
 /* Pas alleen de onderstaande regels aan */
 /* Header */
 header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,14 +111,14 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  padding: 20px;
+  padding: 60px;
   background-color: #ecffe9;
   height: 120px;
   -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
 }
 
-.brand-logo img {
+header .brand-logo img {
   width: auto;
   padding-top: 20px;
   height: 7.5em;
@@ -159,7 +159,16 @@ header {
 
 /* Hero Section */
 .hero {
-  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  max-width: 80ch;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 1em;
+  padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,26 +177,42 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background: #c0eea9;
+  /* Featured Section */
+  /* About Section */
 }
 
-.hero-img img {
+.hero__img img {
   display: block;
   height: auto;
   width: 15.5em;
 }
 
-.hero-text {
-  max-width: 700px;
+.hero__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  max-width: 80ch;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 20px;
+  padding-top: 1em;
 }
 
-/* Featured Section */
-.featured {
-  padding: 20px;
+.hero .featured {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  max-width: 80ch;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 1em;
+  padding: 60px;
 }
 
-.featured .wrapper {
+.hero .featured__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,48 +220,65 @@ header {
       flex-wrap: wrap;
 }
 
-#featured .image img {
+.hero .featured__image img {
   width: 300px;
 }
 
-.text-featured {
-  max-width: 700px;
+.hero__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  max-width: 80ch;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 20px;
+  padding-top: 1em;
 }
 
-.text-featured p {
+.hero__text__p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  max-width: 80ch;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 1em;
   text-align: justify;
-  padding: 20px;
+  padding: 60px;
   line-height: 1.4em;
   background-color: #ecffe9;
 }
 
-/* About Section */
-.text-about {
-  max-width: 700px;
+.hero .about {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  max-width: 80ch;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 20px;
+  padding-top: 1em;
+  background-color: #c0eea9;
+  padding: 60px;
 }
 
-.text-about p {
+.hero .about__p {
   text-align: justify;
   padding-bottom: 1em;
   line-height: 1.4em;
 }
 
-.about {
-  background-color: #c0eea9;
-  padding: 20px;
-}
-
-.about .wrapper {
+.hero .about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.video-wrapper {
+.hero .about__video-wrapper {
   position: relative;
   padding-bottom: 33.25%;
   overflow: hidden;
@@ -249,7 +291,7 @@ header {
   margin: 1.4em 0;
 }
 
-.video-wrapper iframe {
+.hero .about__video-wrapper__iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -259,10 +301,10 @@ header {
 
 /* Contact Section */
 .contact {
-  padding: 20px;
+  padding: 60px;
 }
 
-.wrapper .contact {
+.contact__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,11 +312,10 @@ header {
       flex-wrap: wrap;
 }
 
-.form-wrapper,
-.contact-wrapper {
-  padding: 20px;
+.contact__form-wrapper, .contact__wrapper {
+  padding: 60px;
 }
 
-.copy-wrapper {
+.contact .copy-wrapper {
   padding-left: 20px;
 }
