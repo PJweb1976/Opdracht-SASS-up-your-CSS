@@ -4,8 +4,8 @@
 @import "./constants";
 
 body {
-  color:#090b08;
-  margin: 0;
+  color:$color-black;
+  margin: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   background-color: #ecffe9;
@@ -122,7 +122,6 @@ header {
 
 /* Hero Section */
 .hero {
-  @include standard-text ();
   padding: $padding-standard;
   display: flex;
   height: 100vh;

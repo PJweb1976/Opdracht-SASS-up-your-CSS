@@ -5,7 +5,7 @@
 */
 body {
   color: #090b08;
-  margin: 0;
+  margin: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   background-color: #ecffe9;
@@ -159,15 +159,6 @@ header .brand-logo img {
 
 /* Hero Section */
 .hero {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: red;
-  max-width: 80ch;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 1em;
   padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,11 +181,11 @@ header .brand-logo img {
 .hero__text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: red;
-  max-width: 80ch;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
   text-align: center;
   padding-top: 1em;
 }
@@ -202,11 +193,11 @@ header .brand-logo img {
 .hero .featured {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: red;
-  max-width: 80ch;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
   text-align: center;
   padding-top: 1em;
   padding: 60px;
@@ -227,11 +218,11 @@ header .brand-logo img {
 .hero__text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: red;
-  max-width: 80ch;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
   text-align: center;
   padding-top: 1em;
 }
@@ -239,11 +230,11 @@ header .brand-logo img {
 .hero__text__p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: red;
-  max-width: 80ch;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
   text-align: center;
   padding-top: 1em;
   text-align: justify;
@@ -255,11 +246,11 @@ header .brand-logo img {
 .hero .about {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: red;
-  max-width: 80ch;
-  padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
   text-align: center;
   padding-top: 1em;
   background-color: #c0eea9;
